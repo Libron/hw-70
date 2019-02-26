@@ -17,13 +17,6 @@ class Calculator extends Component {
         }
 
         switch (symbol) {
-            case '+':
-            case '-':
-            case '*':
-            case '.':
-            case '/':
-                this.setState({str: this.state.str + symbol});
-                break;
             case '=':
                 try {
                     if (this.state.str.length === 0) break;
